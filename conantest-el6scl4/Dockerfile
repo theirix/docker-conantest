@@ -1,6 +1,6 @@
 # Using:
-#   docker build . -t conantest-el6scl
-#   docker run --rm -v=/path/to/conan-libfoo:/conan -it conantest-el6scl
+#   docker build . -t conantest-el6scl4
+#   docker run --rm -v=/path/to/conan-libfoo:/conan -it conantest-el6scl4
 #
 FROM centos:6
 
