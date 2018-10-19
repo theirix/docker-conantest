@@ -5,9 +5,9 @@
 FROM debian:stable
 
 RUN apt update -y
-RUN apt install -y gcc libtool-bin automake autoconf binutils python-pip
+RUN apt install -y gcc libtool-bin automake autoconf binutils python3-pip vim-nox
 
-RUN pip install conan
+RUN pip3 install conan
 
 RUN conan profile new --detect default
 
