@@ -3,7 +3,7 @@
 Handy containers for local conan dev.
 
 Docker images:
-- `theirix/conantest-deb`: debian 9 with gcc 6
+- `theirix/conantest-deb`: debian stable with gcc
 - `theirix/conantest-el6scl4`: centos 6 with SCL devtoolset-4 with gcc 5.3
 
 Images are built from the directories with same names and pushed to docker hub.
