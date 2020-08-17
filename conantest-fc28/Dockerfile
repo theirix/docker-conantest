@@ -1,12 +1,10 @@
 # Using:
-#   docker build . -t conantest-deb
-#   docker run --rm -v=/path/to/conan-libfoo:/conan -it conantest-deb
+#   docker build . -t conantest-fc28
+#   docker run --rm -v=/path/to/conan-libfoo:/conan -it conantest-fc28
 #
-FROM debian:stable
+FROM fedora:28
 
-RUN apt-get update && \
-    apt-get install -y gcc libtool-bin automake autoconf binutils python3-pip vim-nox && \
-    rm -rf /var/lib/apt/lists/*
+RUN dnf install -y make autoconf libtool automake git gcc gcc-c++ python3-pip
 
 RUN pip3 install conan
 

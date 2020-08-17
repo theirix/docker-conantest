@@ -15,9 +15,9 @@ RUN scl enable python27 -- pip install conan
 RUN scl enable devtoolset-4 python27 -- conan profile new --detect default
 
 # Add cmake installer
-RUN sed -E -ibak "/^.build_requires/a \*: cmake_installer\\/1.0@conan\\/stable" /root/.conan/profiles/default
+RUN sed -E -ibak "/^.build_requires/a \*: cmake\\/3.18.1" /root/.conan/profiles/default
 
-RUN conan install cmake_installer/1.0@conan/stable
+RUN conan install cmake/3.18.1@
 
 RUN conan remote add bincrafters "https://api.bintray.com/conan/bincrafters/public-conan"
 
